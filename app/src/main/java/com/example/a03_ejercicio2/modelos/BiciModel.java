@@ -1,10 +1,12 @@
-package com.example.a03_ejercicio2;
+package com.example.a03_ejercicio2.modelos;
 
-public class Bici {
+import java.io.Serializable;
+
+public class BiciModel implements Serializable {
     private String marca;
     private float pulgadas;
 
-    public Bici(String marca, float pulgadas) {
+    public BiciModel(String marca, float pulgadas) {
         this.marca = marca;
         this.pulgadas = pulgadas;
     }
