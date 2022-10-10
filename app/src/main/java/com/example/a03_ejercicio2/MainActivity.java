@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 if(result.getResultCode() == RESULT_OK){
                     if(result.getData() != null){
                         Bundle bundle = result.getData().getExtras();
-                        CocheModel coche = (CocheModel) bundle.getSerializable("CAR");
+                        CocheModel coche = (CocheModel) bundle.getSerializable("COCHE");
                         if(coche != null){
                             coches.add(coche);
                             txtCoche.setText("Coches: "+coches.size());
